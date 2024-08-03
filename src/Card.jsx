@@ -8,24 +8,20 @@ function Card() {
     const firstCard = studentList[initialCard];
     // console.log(firstCard)
 
-    const hasPrev = initialCard >  0;
-    const hasNext = initialCard < studentList.length - 1;
-
     function handlePrevClick() {
-        if (hasPrev) {
+        if (initialCard > 0) {
             setCard(initialCard - 1);
         }
     }
 
     function handleNextClick() {
-        if (hasNext) {
+        if (initialCard < studentList.length - 1) {
             setCard(initialCard + 1);
         }
     }
 
     return (
         <article className="max-w-5xl h-fit mx-6 grid auto-rows-fr gap-8 md:gap-0 md:grid-cols-2 relative">
-            {/* <img src="./src/assets/images/pattern-bg.svg" alt="background" className="absolute -top-40 md:-top-0 md:-right-0 -z-10"/> */}
             <section className="relative p-12 lg:p-16 flex flex-col justify-center items-center">
                 <img src={firstCard.cover} alt={firstCard.firstName} className="overflow-hidden rounded-lg"/>
                 <div className="bg-slate-50 w-20 h-11 rounded-3xl shadow-2xl flex gap-8 justify-center items-center absolute bottom-6 lg:bottom-10 md:left-12">
