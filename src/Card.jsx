@@ -37,7 +37,7 @@ function Card() {
             <section className="relative text-center md:row-start-1 md:self-center md:text-start md:relative md:left-20 lg:left-28">
                 <img src="./src/assets/images/pattern-quotes.svg" alt="quotation icon" className="absolute w-14 left-0 right-0 mx-auto md:mx-0 md:-top-8 md:left-8"/>
                 <q className="text-xl lg:text-2xl md:font-normal text-gray-600 leading-8 mb-5 block">{firstCard.testimony}</q>
-                <section className="flex items-center gap-2">
+                <section className="md:flex md:items-center md:gap-2">
                     <h1 className="text-lg font-semibold text-blue-950">{firstCard.firstName} {firstCard.lastName}</h1>
                     <p className="text-sm font-medium text-gray-400">{firstCard.profession}</p>
                 </section>
